@@ -3,5 +3,10 @@
  */
 
 .mainFxmlClass {
+    -fx-background-color: #2267d6;
+}
 
+.label{
+    -fx-font: 30pt Arial;
+    -fx-text-fill: whitesmoke;
 }
