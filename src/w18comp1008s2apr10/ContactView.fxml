@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,12 +16,12 @@
         <URL value="@mynameview.css" />
     </stylesheets>
    <children>
-      <VBox alignment="TOP_CENTER" layoutX="61.0" layoutY="72.0">
+      <VBox alignment="CENTER" layoutX="61.0" layoutY="72.0" prefHeight="400.0" prefWidth="600.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <GridPane prefHeight="160.0" prefWidth="500.0">
+            <GridPane prefHeight="247.0" prefWidth="560.0">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="210.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="350.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -30,12 +32,16 @@
                   <Label text="First Name" />
                   <Label text="Last Name" GridPane.rowIndex="1" />
                   <Label text="Phone" GridPane.rowIndex="2" />
-                  <TextField GridPane.columnIndex="1" />
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="phoneTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
+            <Button mnemonicParsing="false" onAction="#createContactButtonPushed" text="Create new Contact" />
          </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
       </VBox>
    </children>
 </AnchorPane>

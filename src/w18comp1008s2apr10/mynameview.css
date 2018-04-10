@@ -10,3 +10,12 @@
     -fx-font: 30pt Arial;
     -fx-text-fill: whitesmoke;
 }
+
+.text-field{
+    -fx-font: 30pt Arial;
+}
+
+.button{
+    -fx-font: 30pt Arial;
+    -fx-background-radius: 20;
+}

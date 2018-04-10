@@ -61,4 +61,9 @@ public class Contact
             throw new IllegalArgumentException("Phone cannot be empty");
     }
 
+    public String toString()
+    {
+        return String.format("%s %s phone: %s", firstName, lastName,
+                                        phone);
+    }
 }
